@@ -1,3 +1,7 @@
 #!/bin/zsh
-p="$pwd"
-NVIM_APPNAME=$p nvim $@
+dir="$(pwd)"
+echo $dir
+# exit 0
+XDG_CONFIG_HOME=$dir nvim
+
+
